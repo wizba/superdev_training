@@ -1,0 +1,18 @@
+button{
+    background-color:var(--button-color);
+    color:white
+}
+
+mdb-card{
+    width:30vw;
+}
+
+mdb-card-header{
+    background-image:var(--color-gradient);
+    color:white;
+}
+
+mdb-card-body{
+   background-color:var( --background-card-color);
+   color:var(--text-color);
+}

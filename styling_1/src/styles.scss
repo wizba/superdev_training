@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --background-color:#ffffff;
+    --background-color-2:#ffffff;
+    --background-card-color:#ffffff;
+    --color-gradient:linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    --button-color:#f57f17;
+    --text-color:#1b1b1b;
+  }
+
+
+body{
+    background-color: var(--background-color);
+}
+//#757575;
+//  linear-gradient(60deg, #29323c 0%, #485563 100%);
+// linear-gradient(120deg, #f6d365 0%, #fda085 100%);
