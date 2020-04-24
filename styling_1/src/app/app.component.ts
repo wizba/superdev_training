@@ -29,9 +29,17 @@ constructor(public themeService:ThemeService,private formBuilder: FormBuilder){
   }
 
 
-  test()
+  onClickOne()
   {
     this.themeService.darkGreytheme();
     console.log('hello');
+  }
+
+  onClickTwo(){
+    this.themeService.darkGreyOrangeTheme();
+  }
+
+  onClickThree(){
+    this.themeService.orangeWhiteTheme()
   }
 }
