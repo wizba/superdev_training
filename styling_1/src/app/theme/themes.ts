@@ -19,7 +19,7 @@ export const dark_grey = {
   export const orange_white = {
     'background-color':'#ffffff',
     'color-gradient':'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',//best for card header
-    'button-color':'#616161',
+    'button-color':'#f57f17',
     'background-card-color':'#ffffff',//best for card body
     'text-color':'#1b1b1b'
   };

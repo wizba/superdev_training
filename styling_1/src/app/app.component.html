@@ -29,15 +29,16 @@
         
       
           <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitches" formControlName="toggle1">
+        
+            <input type="checkbox" class="custom-control-input" id="customSwitches" (change)="onChangeDarkGrey()" formControlName="toggle1">
             <label class="custom-control-label" for="customSwitches">dark_grey</label>
           </div>
           <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitches_2" formControlName="toggle2">
+            <input type="checkbox" class="custom-control-input" id="customSwitches_2" (change)="onChangeGreyOrange()" formControlName="toggle2">
             <label class="custom-control-label" for="customSwitches_2">dark_grey_orange</label>
           </div>
           <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitches_3" formControlName="toggle3">
+            <input type="checkbox" class="custom-control-input" id="customSwitches_3" (change)="onChangeOrangeWhite()" formControlName="toggle3">
             <label class="custom-control-label" for="customSwitches_3">orange_white</label>
           </div>
 

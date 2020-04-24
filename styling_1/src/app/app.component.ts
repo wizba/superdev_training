@@ -22,17 +22,15 @@ constructor(public themeService:ThemeService,private formBuilder: FormBuilder){
       toggle2:[],
       toggle3:[]
     });
-
-    this.toggleThemes.valueChanges.subscribe(value=>{
-      console.log(value);
-    })
   }
 
-
+/**
+ * the part below is for push buttons
+ */
   onClickOne()
   {
     this.themeService.darkGreytheme();
-    console.log('hello');
+    
   }
 
   onClickTwo(){
@@ -42,4 +40,34 @@ constructor(public themeService:ThemeService,private formBuilder: FormBuilder){
   onClickThree(){
     this.themeService.orangeWhiteTheme()
   }
+/**
+ * the part below is for toggle buttons
+ */
+  onChangeDarkGrey()
+  {
+    this.themeService.darkGreytheme();
+    this.changeSwitchState(2,3);
+  }
+
+  onChangeGreyOrange()
+  {
+    this.themeService.darkGreyOrangeTheme();
+    this.changeSwitchState(1,3);
+  }
+  
+  onChangeOrangeWhite()
+  {
+    this.themeService.orangeWhiteTheme();
+    this.changeSwitchState(1,2);
+  }
+
+//select which toggle button to reset
+  changeSwitchState(toggleNumber1:number,toggleNumber2:number)
+  {
+    this.toggleThemes.get(`toggle${toggleNumber1}`).setValue(false);
+    this.toggleThemes.get(`toggle${toggleNumber2}`).setValue(false);
+  }
+
+
+
 }
