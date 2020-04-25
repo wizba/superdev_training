@@ -1,0 +1,57 @@
+.main-row{
+    min-height: 40%;
+    width: 80%;
+    
+}
+mdb-card{
+    height: 100%;
+    
+}
+.profile-column{
+    mdb-card-img{
+        width: 20vw;
+        margin: auto;
+    }
+ }
+.table-column{}
+
+.mobile-view-card{
+    display: none;
+}
+
+.mobile-card-APS{
+
+        font-size: 10vw;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+     
+}
+.mobile-icon-svg{
+    height: 10vw;
+    height: 10vw;
+}
+@media (max-width: 500px) 
+{
+
+}
+
+@media (max-width: 414px) 
+{
+    .profile-column{
+        
+        mdb-card-img{
+            width: 30vw;
+            margin: auto;
+        }
+    }
+
+    .mobile-view-card{
+        display: block;
+        mdb-card{
+            width: 30%;
+            float: left;
+            margin: 1%;
+        }
+    }
+}
