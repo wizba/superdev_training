@@ -35,6 +35,8 @@ constructor(public themeService:ThemeService,private formBuilder: FormBuilder){
 
   onClickTwo(){
     this.themeService.darkGreyOrangeTheme();
+   
+
   }
 
   onClickThree(){
