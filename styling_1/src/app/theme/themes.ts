@@ -30,9 +30,5 @@ export const dark_grey = {
     'background-card-color':'#ffffff',//best for card body
     'text-color':'#000000'
   };
-//   export const lightTheme = {
-//     'primary-color': '#fff',
-//     'background-color': '#e5e5e5',
-//     'text-color': '#2d2d2d'
-//   };
+
   
