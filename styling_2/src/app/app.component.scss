@@ -6,10 +6,14 @@ mdb-card{
     height: 100%;
     
 }
+
 .profile-column{
     mdb-card-img{
         width: 20vw;
         margin: auto;
+    }
+    mdb-card-body{
+        margin:auto
     }
  }
 
@@ -29,6 +33,10 @@ mdb-card{
 .mobile-icon-svg{
     height: 10vw;
     height: 10vw;
+}
+.email-header{
+    margin:auto
+    
 }
 @media (max-width: 500px) 
 {
