@@ -1,7 +1,6 @@
 .main-row{
     min-height: 40%;
-    width: 80%;
-    
+    width: 90%;
 }
 mdb-card{
     height: 100%;
@@ -35,7 +34,9 @@ mdb-card{
 {
 
 }
-
+.mobile-docs-card{
+    display: none;
+}
 @media (max-width: 414px) 
 {
     .profile-column{
@@ -52,6 +53,18 @@ mdb-card{
             width: 30%;
             float: left;
             margin: 1%;
+        }
+    }
+
+    .mobile-docs-card{
+        display: block;
+        mdb-card{
+            width: 45%;
+            float: left;
+            margin: 1%;
+            label{
+                font-size: 0.5rem;
+            }
         }
     }
 }
