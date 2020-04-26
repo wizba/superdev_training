@@ -34,10 +34,24 @@ mdb-card{
     height: 10vw;
     height: 10vw;
 }
-.email-header{
-    margin:auto
-    
-}
+
+.flex-end { 
+    justify-content: flex-end; 
+   
+  } 
+  .flex-container {
+    padding: 0 5%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  .edit-text{
+    font-size: small;
+  }
+  .edit-icon{
+    font-size: x-large;  
+    padding-right: 5%;
+  }
 @media (max-width: 500px) 
 {
 
@@ -80,4 +94,6 @@ mdb-card{
             }
         }
     }
+
+    
 }
