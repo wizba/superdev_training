@@ -21,7 +21,7 @@ mdb-card{
 .mobile-card-APS{
 
         font-size: 10vw;
-        background: -webkit-linear-gradient(#eee, #333);
+        background:linear-gradient(#eee, #333);
       background-clip: text;
        color: transparent;
      
@@ -64,6 +64,11 @@ mdb-card{
             margin: 1%;
             label{
                 font-size: 0.5rem;
+            }
+            button{
+                width: 50%;
+                font-size: 0.3rem;
+                padding: 3%;
             }
         }
     }
