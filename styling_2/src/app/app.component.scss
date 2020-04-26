@@ -12,7 +12,7 @@ mdb-card{
         margin: auto;
     }
  }
-.table-column{}
+
 
 .mobile-view-card{
     display: none;
@@ -22,8 +22,8 @@ mdb-card{
 
         font-size: 10vw;
         background: -webkit-linear-gradient(#eee, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      background-clip: text;
+       color: transparent;
      
 }
 .mobile-icon-svg{
