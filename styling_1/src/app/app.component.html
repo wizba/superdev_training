@@ -1,76 +1,87 @@
 
     <!-- Start your project here-->
-<div style="height: 100vh">
-  <div class="flex-center flex-column">
     
-
-    <div class="row">
-      <div class="col-6">
-        <button mdbBtn type="button" mdbWavesEffect (click)="onClickOne()">One</button>
-        <button mdbBtn type="button"  mdbWavesEffect  (click)="onClickTwo()">two</button>
-        <button mdbBtn type="button"  mdbWavesEffect (click)="onClickThree()">Three</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Purple</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Deep-Purple</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Indigo</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Light-blue</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Cyan</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Dark-Green</button>
-        <button mdbBtn type="button"  mdbWavesEffect>Light-green</button>
-
-
-
-        <mdb-card>
-          <mdb-card-body [formGroup]="toggleThemes">
-        
-  
-            <mdb-card-title>
-              <h4>Theme controller</h4>
-            </mdb-card-title>
-        
+      <div style="height: 100vh;width: 100vw;margin: 0; " class="hero-image flex-column">
+        <div class="hero-text">
+          <h1 style="font-size:50px">I am Jane Doe</h1>
+          <h3>And I'm a Photographer</h3>
+          <button>Hire me</button>
+        </div>
       
-          <div class="custom-control custom-switch">
-        
-            <input type="checkbox" class="custom-control-input" id="customSwitches" (change)="onChangeDarkGrey()" formControlName="toggle1">
-            <label class="custom-control-label" for="customSwitches">dark_grey</label>
-          </div>
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitches_2" (change)="onChangeGreyOrange()" formControlName="toggle2">
-            <label class="custom-control-label" for="customSwitches_2">dark_grey_orange</label>
-          </div>
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitches_3" (change)="onChangeOrangeWhite()" formControlName="toggle3">
-            <label class="custom-control-label" for="customSwitches_3">orange_white</label>
-          </div>
-
-          </mdb-card-body>
-        </mdb-card>
       </div>
-
-      <div class="col-6">
-        <!-- Card -->
-        <mdb-card>
-           <mdb-card-header>
-             <h1>Some hearder</h1>
-           </mdb-card-header>
-          <!--Card content-->
-          <mdb-card-body>
-            <!--Title-->
-            <mdb-card-title>
-              <h4>Card Title</h4>
-            </mdb-card-title>
-
-            <!--Text-->
-            <p> Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
-
-            <button href="#" mdbBtn  mdbWavesEffect>Button</button>
-          </mdb-card-body>
-        </mdb-card>
-        <!-- Card -->
-      </div>
-    </div>
+      
+      <div class="flex-center flex-column" >
     
-  </div>
-</div>
+
+        <div class="row mt-5 mb-5 pt-5 pb-5">
+          <div class="col-6">
+            <button mdbBtn type="button" mdbWavesEffect (click)="onClickOne()">One</button>
+            <button mdbBtn type="button"  mdbWavesEffect  (click)="onClickTwo()">two</button>
+            <button mdbBtn type="button"  mdbWavesEffect (click)="onClickThree()">Three</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Purple</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Deep-Purple</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Indigo</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Light-blue</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Cyan</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Dark-Green</button>
+            <button mdbBtn type="button"  mdbWavesEffect>Light-green</button>
+      
+      
+      
+            <mdb-card>
+              <mdb-card-body [formGroup]="toggleThemes">
+            
+      
+                <mdb-card-title>
+                  <h4>Theme controller</h4>
+                </mdb-card-title>
+            
+          
+              <div class="custom-control custom-switch">
+            
+                <input type="checkbox" class="custom-control-input" id="customSwitches" (change)="onChangeDarkGrey()" formControlName="toggle1">
+                <label class="custom-control-label" for="customSwitches">dark_grey</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitches_2" (change)="onChangeGreyOrange()" formControlName="toggle2">
+                <label class="custom-control-label" for="customSwitches_2">dark_grey_orange</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitches_3" (change)="onChangeOrangeWhite()" formControlName="toggle3">
+                <label class="custom-control-label" for="customSwitches_3">orange_white</label>
+              </div>
+      
+              </mdb-card-body>
+            </mdb-card>
+          </div>
+      
+          <div class="col-6">
+            <!-- Card -->
+            <mdb-card>
+               <mdb-card-header>
+                 <h1>Some hearder</h1>
+               </mdb-card-header>
+              <!--Card content-->
+              <mdb-card-body>
+                <!--Title-->
+                <mdb-card-title>
+                  <h4>Card Title</h4>
+                </mdb-card-title>
+      
+                <!--Text-->
+                <p> Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+      
+                <button href="#" mdbBtn  mdbWavesEffect>Button</button>
+              </mdb-card-body>
+            </mdb-card>
+            <!-- Card -->
+          </div>
+        </div>
+        
+      </div>
+
+  
+
 <!-- /Start your project here-->

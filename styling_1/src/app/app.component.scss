@@ -16,3 +16,27 @@ mdb-card-body{
    background-color:var( --background-card-color);
    color:var(--text-color);
 }
+
+.hero-image {
+    background-image: url(https://images.wallpaperscraft.com/image/bmw_vision_efficientdynamics_concept_100297_1400x1050.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .row
+  {
+      width: 100%;//ensures your width is exatly 100% not morethan that
+  }
