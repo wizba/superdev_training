@@ -1,0 +1,21 @@
+version: '2'
+
+#Define the services/containers to be run
+services:
+    advanced: #Container name
+        build: advanced
+        ports:
+        - '3601:3601'
+        container_name: advanced_backend
+        restart: always
+        depends_on:
+        - mongo
+
+    mongo:
+        container_name: mongo
+        image: mongo
+
+    ports:
+        - '27017:27017'
+        volumes:
+        - ./data:/usr/local/var/mongodb
