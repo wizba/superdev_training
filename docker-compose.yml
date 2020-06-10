@@ -5,7 +5,7 @@ services:
     advanced: #Container name
         build: advanced
         ports:
-        - '3601:3601'
+        - '3602:3602'
         container_name: advanced_backend
         restart: always
         depends_on:
@@ -14,8 +14,7 @@ services:
     mongo:
         container_name: mongo
         image: mongo
-
-    ports:
+        ports:
         - '27017:27017'
         volumes:
         - ./data:/usr/local/var/mongodb
