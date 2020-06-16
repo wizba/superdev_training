@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row pt-5">
+    <div class="col-6 bg_color">
+      <input mdbInput type="email" class="form-control mt-5" id="inputEmail4" placeholder="Input1" [(ngModel)] = "input1">
+      
+      <input mdbInput type="email" class="form-control my-3" id="inputEmail4" placeholder="Input2" [(ngModel)] = "input2">
+      <button (click)="Save()" type="button" mdbBtn color="dark" mdbWavesEffect>Save</button>
+    </div>
+    <div class="col-6 bg_color2 font">
+      <p>{{input1}}</p>
+      <p>{{input2}}</p>
+    </div>
+  </div>
+</div>
+
