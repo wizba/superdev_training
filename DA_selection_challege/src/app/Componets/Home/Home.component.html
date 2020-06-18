@@ -1,0 +1,75 @@
+
+<div class="container con">
+    <div class="row">
+        <div class="col-8">
+            <div class=" mb-3" *ngFor="let item of this.PostsService._post; let i=index">
+                <mdb-card>
+                    <!--Card image-->
+                    <mdb-card-title class="pl-3 pt-3">
+                        <p class="h4">{{item.postedBy}}</p>
+                      </mdb-card-title>
+                    <mdb-card-img [src]='item.image' alt="Card image cap"></mdb-card-img>
+                    <!--Card content-->
+                    <mdb-card-body>
+        
+                      <mdb-card-text> 
+                         monaco is the best island ever
+                        
+                      </mdb-card-text>
+                      <div class="row pl-3">
+                          <div>
+                            <mdb-icon fas icon="heart" [ngStyle]="{ 'color':this.likes[i]? '#ff4444' : '#777777'}" (click)="likeOrUnlike(i)"></mdb-icon>
+                            {{item.likes.length}}
+                          </div>
+                          <div>
+                            <mdb-icon class="px-2" fas icon="comment-alt" (click)="onCLickComments(item)"></mdb-icon>
+                            {{item.comments.length}}
+                          </div>
+                          
+                      </div>
+                      
+                      <mdb-card-text> 
+                        liked by <b>Sipho Mokwena</b>
+                     </mdb-card-text>
+                     <hr>
+                     <div>
+                        <div class="md-form">
+                            <div class="row">
+                                <div class="col-11">
+                                    <input mdbInput placeholder="comment" type="text" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <mdb-icon far icon="paper-plane"></mdb-icon>
+                                </div>
+                               
+                            </div>
+                            
+                          </div>
+                      </div>
+                    </mdb-card-body>
+                  </mdb-card>
+            </div>
+        </div>
+        <div class="col-4 details-card text-center">
+            <mdb-card>
+               
+                <mdb-card-body>
+              
+                    <div class="row justify-content-center avatar mx-auto mb-3">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle">
+                    </div>
+                  <mdb-card-title>
+                    <h4>William Rabopape</h4>
+                  </mdb-card-title>
+              
+                  <!--Text-->
+                  <mdb-card-text> 
+                      Software developer ,computer engineer ,musician and whatever whatever 
+                  </mdb-card-text>
+              
+                  <a href="#" mdbBtn color="primary" mdbWavesEffect>edit profile</a>
+                </mdb-card-body>
+              </mdb-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.con{
+  margin-top: 100px;
+}
+
+.details-card{
+    position: relative;
+    mdb-card{
+        position: fixed;
+        width: 350px;
+    }
+}
+
+.row
+{
+    width: 100%;
+    mdb-icon{
+        font-size: 24px;
+    }
+}
+
+.liked{
+   color:#ff4444;
+}
+.notLiked{
+    color:#777777;
+}

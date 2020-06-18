@@ -1,0 +1,36 @@
+<div class="my-form center-element">
+  <mdb-card  [formGroup]="validatingForm">
+  <mdb-card-body>
+    <div class="text-center">
+      <p class="h2">Register</p>
+    </div>
+      <div class="md-form">
+        <input mdbInput type="text"  class="form-control" formControlName="name">
+        <label for="form1" class="">name</label>
+      </div>
+      <div class="md-form">
+        <input mdbInput type="text"  class="form-control" formControlName="surname">
+        <label for="form1" class="">surname</label>
+      </div>
+
+      <div class="md-form">
+        <input mdbInput mdbValidate type="email"  class="form-control" formControlName="email">
+        <label for="form8">Email validator</label>
+        <mdb-error *ngIf="input.invalid && (input.dirty || input.touched)">Input invalid</mdb-error>
+        <mdb-success *ngIf="input.valid && (input.dirty || input.touched)">Input valid</mdb-success>
+      </div>
+      <div class="md-form">
+        <input mdbInput type="password"  class="form-control" formControlName="password">
+        <label for="form1" class="">password</label>
+      </div>
+      <div class="but row">
+        <button mdbBtn class="mx-auto" type="button" color="light-blue" mdbWavesEffect>Register</button>
+      </div>
+      <div class="row justify-content-center">
+        <a>Login</a>
+      </div>
+    </mdb-card-body>
+    
+  </mdb-card>
+
+</div>
