@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { post } from './interfaces/user.interface';
 import { NodeWithI18n } from '@angular/compiler';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -205,4 +206,15 @@ export class PostsService {
 
 constructor() { }
 
+   getPost(name:string)
+  {
+    let myArray ={};
+      this._post.forEach(value=>{
+       
+      if(name === value.postedBy)
+           myArray= value.postedBy
+      })
+
+      return of(myArray)
+  }
 }

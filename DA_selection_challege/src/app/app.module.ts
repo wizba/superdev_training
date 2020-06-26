@@ -17,6 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { RegisterFormService } from './services/register/registerForm.service';
 import { LoginService } from './services/login/loginService.service';
 import { NavBarComponent } from './Componets/Home/NavBar/NavBar.component';
+import { CommentComponent } from './Componets/comment/comment.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NavBarComponent } from './Componets/Home/NavBar/NavBar.component';
     HomeComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    NavBarComponent
+    NavBarComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

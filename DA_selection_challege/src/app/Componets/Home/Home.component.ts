@@ -16,9 +16,8 @@ export class HomeComponent implements OnInit {
   logedin:string = 'Evie-Mae';
   index:number =0;
   isFound = false;
-  ngOnInit() {
 
-    
+  ngOnInit() {
     this.PostsService._post.forEach((value, index)=>{
       
       value.likes.forEach(value2=>{
@@ -70,7 +69,8 @@ export class HomeComponent implements OnInit {
 
   onCLickComments(item){
     console.log(item.postedBy);
-    
-    this.router.navigate([`comment/${item.postedBy}`]);
+    let name = item.postedBy;
+    //comment/:id/:img/:when
+    this.router.navigate(['/comment',name]);
   }
 }

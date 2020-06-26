@@ -1,3 +1,23 @@
-<p class="h1 center-element">
- {{name}}
-</p>
+  
+  <div class="container">
+    <div class="row top my-card">
+      <div class="col-8 px-0">
+          <!-- Card -->
+        <mdb-card>
+          <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+            <!-- Card img -->
+            <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+            <a>
+              <div class="mask"></div>
+            </a>
+          </div>
+          
+      </mdb-card>
+<!-- Card -->
+      </div>
+      <div class="col-4">
+        <p class="h3 text">posted by: {{name}}</p>
+        <button type="button" mdbBtn color="success" (click)="goHome()" mdbWavesEffect>Success</button>
+      </div>  
+    </div>
+  </div>

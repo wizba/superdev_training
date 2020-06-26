@@ -1,0 +1,39 @@
+.comment{
+    display: inline-block;
+}
+.row{
+    width:100%;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+// .img-fluid, .video-fluid{
+//     width: 700px !important;
+//     height: 600px !important;
+// }
+
+.top{
+    margin-top: 100px;
+}
+
+.my-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .my-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  img{
+      height: 600px ;
+     // width: 700px;
+  }
+
+  
+
+  li{
+      display: inline-block;
+  }
+
+  
