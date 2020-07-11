@@ -1,4 +1,4 @@
-import { PdfJsViewerModule } from 'ng2-pdfjs-viewer'; // <-- Import PdfJsViewerModule module
+ // <-- Import PdfJsViewerModule module
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,8 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
       timeOut: 10000,
       positionClass: 'toast-bottom-right'
     }),
-    HttpClientModule,
-    PdfJsViewerModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

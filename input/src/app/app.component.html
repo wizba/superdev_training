@@ -1,4 +1,4 @@
 <!-- your.component.html -->
 <button mdbBtn (click)="openPdf()">Open Pdf</button>
-<iframe src="http://www.lmpt.univ-tours.fr/~volkov/C++.pdf" style="width:100%; height:100vh;" frameborder="0"></iframe>
+<iframe *ngIf="this.showPdf" src="http://www.lmpt.univ-tours.fr/~volkov/C++.pdf" style="width:100%; height:100vh;" frameborder="0"></iframe>
 <!-- <embed src="http://www.lmpt.univ-tours.fr/~volkov/C++.pdf" style="width:100%; height:100vh;" onerror="alert('URL invalid !!');" /> -->
